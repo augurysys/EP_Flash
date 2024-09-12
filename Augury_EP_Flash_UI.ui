@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Augury EP Flash</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Downloads/qtresource.qrc">
+    <normaloff>:/icons/augury-logo.png</normaloff>
+    <normalon>../../Downloads/augury-logo.png</normalon>:/icons/augury-logo.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>50.000000000000000</double>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>36</width>
+    <height>36</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../../Downloads/augury-logo.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="font">
+           <font>
+            <pointsize>42</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;   EP - Flash&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="SN_label">
+              <property name="text">
+               <string>Serial Number:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="BATlot_label">
+              <property name="text">
+               <string>Battery Lot:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="FW_path_label">
+              <property name="text">
+               <string>FW version Path: </string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLineEdit" name="SN_lineEdit"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="BATlot_lineEdit"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="FWpath_lineEdit"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Flash_Pb">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>FLASH EP</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../Downloads/round-line-bottom-arrow-icon.png</normaloff>../../Downloads/round-line-bottom-arrow-icon.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTextEdit" name="cmd_textEdit">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Clear_Pb">
+          <property name="text">
+           <string>Clear Console </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../Downloads/qtresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
